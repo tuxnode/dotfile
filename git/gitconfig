@@ -1,0 +1,12 @@
+[user]
+	email = tuxnode@outlook.com
+	name = tuxnode
+	signingkey = /home/node/.ssh/id_ed25519
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true

@@ -1,0 +1,81 @@
+window {
+    background-size: cover;
+    background-position: center;
+}
+
+/* 核心输入区域容器 */
+#body {
+    background-color: rgba(30, 30, 46, 0.65); /* 半透明深色衬底 */
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 时钟样式 */
+#clock-label {
+    font-family: "DejaVu Sans Mono", sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    color: #cdd6f4;
+    margin-bottom: 5px;
+}
+
+/* 日期样式 */
+#date-label {
+    font-family: "DejaVu Sans", sans-serif;
+    font-size: 18px;
+    color: #a6adc8;
+    margin-bottom: 20px;
+}
+
+/* 密码输入框 */
+entry {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 2px solid #bba6f7; /* 薰衣草紫边框 */
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+entry:focus {
+    border-color: #f5c2e7; /* 聚焦时变为粉色 */
+    box-shadow: 0 0 8px rgba(245, 194, 231, 0.5);
+}
+
+/* 音乐播放控制模块 (Playerctl Module) 样式 */
+#playerctl-box {
+    margin-top: 20px;
+    background-color: rgba(17, 17, 27, 0.5);
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+#playerctl-title {
+    color: #cdd6f4;
+    font-weight: bold;
+}
+
+#playerctl-artist {
+    color: #bac2de;
+}
+
+/* 电源按钮模块 (Powerbar Module) 样式 */
+#powerbar-box {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #45475a;
+    color: #cdd6f4;
+    border-radius: 6px;
+    padding: 5px 10px;
+    margin: 0 4px;
+}
+
+button:hover {
+    background-color: #f38ba8; /* 悬浮在电源键上时变红 */
+    color: #11111b;
+}

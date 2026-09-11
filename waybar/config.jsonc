@@ -1,0 +1,87 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "spacing": 4,
+  "modules-left": [    "sway/workspaces", "sway/window"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "network",
+    "cpu",
+    "memory",
+    "battery",
+    "custom/power"
+  ],
+
+  "sway/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "all-outputs": false,
+    "persistent-workspaces": {
+      "*": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    }
+  },
+
+  "sway/window": {
+    "format": "{}",
+    "max-length": 40
+  },
+
+  "clock": {
+    "format": "{:%H:%M  %m/%d}",
+    "tooltip-format": "{:%Y-%m-%d  %H:%M:%S}",
+    "interval": 1
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume:2}%",
+    "format-muted": " {volume:2}%",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "scroll-step": 2,
+    "on-click": "pamixer -t",
+    "on-scroll-up": "pamixer -i 2",
+    "on-scroll-down": "pamixer -d 2"
+  },
+
+  "network": {
+    "format-wifi": "  {signalStrength}%",
+    "format-ethernet": "  Connected",
+    "format-disconnected": "  Disconnected",
+    "tooltip-format": "{ipaddr}/{cidr}  {ifname}",
+    "on-click": "nm-connection-editor"
+  },
+
+  "cpu": {
+    "format": "  {usage}%",
+    "interval": 2
+  },
+
+  "memory": {
+    "format": "  {}%",
+    "interval": 2
+  },
+
+  "battery": {
+    "bat": "BAT0",
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "format-charging": " {capacity}%",
+    "format-full": "  Full",
+    "tooltip-format": "{timeTo}  {power}W"
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "wlogout",
+    "tooltip": "Shutdown menu"
+  }
+}
