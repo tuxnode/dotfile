@@ -44,4 +44,7 @@ link "$DOTFILE_DIR/kitty" "$HOME_DIR/.config/kitty"
 # gtklock
 link "$DOTFILE_DIR/gtklock" "$HOME_DIR/.config/gtklock"
 
+# ssh
+link "$DOTFILE_DIR/ssh" "$HOME_DIR/.ssh"
+
 echo "Done."
