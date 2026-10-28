@@ -47,4 +47,7 @@ link "$DOTFILE_DIR/gtklock" "$HOME_DIR/.config/gtklock"
 # ssh
 link "$DOTFILE_DIR/ssh" "$HOME_DIR/.ssh"
 
+# fastfetch
+link "$DOTFILE_DIR/fastfetch" "$HOME_DIR/.config/fastfetch"
+
 echo "Done."
